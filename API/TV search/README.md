@@ -65,13 +65,13 @@ const getMovieList = async () => {
 
   3.用 forEach() 迴圈遍歷資料陣列，每一筆資料都：
 
--- 使用 document.createElement() 建立一個新的 <div> 元素（作為卡片）。
+      - 使用 document.createElement() 建立一個新的 <div> 元素（作為卡片）。
 
--- 使用 innerHTML 將節目名稱、播放時間、評分、圖片等資訊加入這個 <div>。
+      - 使用 innerHTML 將節目名稱、播放時間、評分、圖片等資訊加入這個 <div>。
 
--- 使用 appendChild() 將這個新元素加到 container 裡。
+      - 使用 appendChild() 將這個新元素加到 container 裡。
 
-4.為了避免每次搜尋結果堆疊在上一筆資料後面，我在迴圈前加上 container.innerHTML = ""，先清空原本的內容，這樣畫面才會正確更新。
+  4.為了避免每次搜尋結果堆疊在上一筆資料後面，我在迴圈前加上 container.innerHTML = ""，先清空原本的內容，這樣畫面才會正確更新。
 
 最後，將這個 showMovieList() 綁定在 form 的 submit 事件中。這樣使用者每次按下搜尋按鈕，我的程式就會串接 API 並顯示對應的 TV show 清單，整體邏輯清楚，功能也拆分得比較乾淨。
 
@@ -109,7 +109,7 @@ const showMovieList = async () => {
 
 ## ✅ 心得
 
-- 現在的我越來越能掌握使用 Axios 串接 API，也更理解如何將資料和 DOM 結合在一起，實際呈現在畫面上。我也開始習慣將功能拆成不同的 function，讓每個 function 都只處理單一任務，讓程式碼更清楚好維護。
+現在的我越來越能掌握使用 Axios 串接 API，也更理解如何將資料和 DOM 結合在一起，實際呈現在畫面上。我也開始習慣將功能拆成不同的 function，讓每個 function 都只處理單一任務，讓程式碼更清楚好維護。
 
 在串接 API 的過程中，我會透過 console.log() 查看拿到的資料格式，這讓我在處理資料時更有信心。我記得一開始看到「要做搜尋功能」時其實滿緊張的，腦中充滿問號，但現在我會告訴自己：「先做就對了！」很多東西其實做了就會漸漸理解、漸漸進步。
 
