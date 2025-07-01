@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 如果要用自己的方式傳from那就要用script去用fetch -->
+    <!-- <script src="addComments.js" defer></script> -->
+  </head>
+  <body>
+    <h1>Adds a comment</h1>
+    <!-- 如果我們要自己傳表單那就<form class="commentform"></form>就好了 -->
+    <form action="/api/comments" method="POST">
+      <input type="text" name="username" placeholder="Your name" required />
+      <input type="text" name="comment" placeholder="Your comment" required />
+      <button type="submit">Submit</button>
+    </form>
+    <a href="/comments">Back to Comments</a>
+  </body>
+</html>

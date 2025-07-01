@@ -1,0 +1,6 @@
+
+http verb / resources(複數) 
+GET / comments - list all comments
+POST / comments - Create a new comment
+PATCH / comments/:id - Update one comment 
+DELETE / comments/:id - Destroy one comment
