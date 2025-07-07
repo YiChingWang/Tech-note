@@ -11,7 +11,9 @@ fetch(`/api/comments/${id}`)
   })
   .then((comment) => {
     const li = document.createElement("li");
-    li.innerHTML = `<p>${comment.username} : ${comment.comment}</p>
+    li.innerHTML = `
+                    <h1>Comment ID : ${comment.id}</h1>
+                    <p>${comment.username} : ${comment.comment}</p>
                     <a href="http://localhost:3000/comments/${comment.id}/edit">Edit Comment!</a>
     `;
     ul.appendChild(li);
